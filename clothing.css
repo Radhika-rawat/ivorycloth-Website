@@ -1,0 +1,805 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffdf9;
+    color: #292b20;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+select {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   COLLECTION HERO
+========================================================= */
+
+.collection-hero {
+    min-height: 390px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background:
+        linear-gradient(
+            rgba(38, 48, 29, 0.72),
+            rgba(38, 48, 29, 0.72)
+        ),
+        url("images/dress1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+
+.collection-hero p {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+
+.collection-hero h1 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(45px, 7vw, 78px);
+
+    font-weight: normal;
+
+    margin-bottom: 15px;
+}
+
+
+.collection-hero span {
+    max-width: 600px;
+
+    font-size: 15px;
+
+    color: #eeeeea;
+}
+
+
+/* =========================================================
+   CATEGORY SHORTCUTS
+========================================================= */
+
+.collection-categories {
+    width: 90%;
+
+    margin: -30px auto 70px;
+
+    position: relative;
+    z-index: 5;
+
+    background: white;
+
+    padding: 20px 30px;
+
+    border-radius: 50px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.10);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+
+.collection-categories a {
+    padding: 12px 28px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    transition: all 0.3s ease;
+}
+
+
+.collection-categories a:hover {
+    background: #29311f;
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+.collection-categories a:first-child {
+    background: #29311f;
+    color: white;
+}
+
+
+/* =========================================================
+   MAIN COLLECTION SECTION
+========================================================= */
+
+.collection-section {
+    width: 90%;
+
+    max-width: 1500px;
+
+    margin: 0 auto 100px;
+}
+
+
+/* =========================================================
+   COLLECTION HEADER
+========================================================= */
+
+.collection-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    margin-bottom: 40px;
+
+    gap: 30px;
+}
+
+
+.collection-header p {
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #777;
+
+    margin-bottom: 7px;
+}
+
+
+.collection-header h2 {
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    font-weight: normal;
+
+    color: #292b20;
+}
+
+
+/* =========================================================
+   SORT DROPDOWN
+========================================================= */
+
+#sortProducts {
+    min-width: 210px;
+
+    padding: 13px 18px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 3px;
+
+    color: #333;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    outline: none;
+}
+
+
+#sortProducts:focus {
+    border-color: #29311f;
+}
+
+
+/* =========================================================
+   PRODUCT GRID
+========================================================= */
+
+.collection-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 28px;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.product-card {
+    background: white;
+
+    border: 1px solid #eeeeea;
+
+    overflow: hidden;
+
+    position: relative;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.product-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE
+========================================================= */
+
+.collection-product-image {
+    width: 100%;
+
+    height: 390px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #f3f0e9;
+}
+
+
+.collection-product-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.6s ease;
+}
+
+
+.product-card:hover
+.collection-product-image img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   WISHLIST BUTTON
+========================================================= */
+
+.product-heart {
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 21px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.10);
+
+    transition: all 0.3s ease;
+
+    z-index: 3;
+}
+
+
+.product-heart:hover {
+    transform: scale(1.1);
+}
+
+
+.product-heart.liked {
+    color: #b33b3b;
+}
+
+
+/* =========================================================
+   PRODUCT INFORMATION
+========================================================= */
+
+.collection-product-info {
+    padding: 20px;
+}
+
+
+.product-category {
+    color: #888;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 7px;
+}
+
+
+.collection-product-info h3 {
+    font-family: Georgia, serif;
+
+    font-size: 19px;
+
+    font-weight: normal;
+
+    color: #292b20;
+
+    margin-bottom: 10px;
+
+    min-height: 30px;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.product-rating {
+    color: #c69b2d;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.product-rating span {
+    color: #777;
+
+    font-size: 11px;
+
+    letter-spacing: 0;
+
+    margin-left: 5px;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.product-price {
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #29311f;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   ADD TO BAG
+========================================================= */
+
+.add-cart {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #29311f;
+
+    background: #29311f;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.add-cart:hover {
+    background: #465138;
+
+    border-color: #465138;
+}
+
+
+/* =========================================================
+   LOAD MORE
+========================================================= */
+
+.load-more-container {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 55px;
+}
+
+
+#loadMore {
+    min-width: 210px;
+
+    padding: 15px 30px;
+
+    background: #29311f;
+
+    color: white;
+
+    border: none;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+#loadMore:hover {
+    background: #465138;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   NO PRODUCTS
+========================================================= */
+
+.no-products {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 100px 20px;
+}
+
+
+.no-products h2 {
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    font-weight: normal;
+
+    margin-bottom: 10px;
+}
+
+
+.no-products p {
+    color: #777;
+}
+
+
+/* =========================================================
+   FOOTER IMPROVEMENTS
+========================================================= */
+
+footer {
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .collection-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 22px;
+    }
+
+
+    .collection-product-image {
+        height: 350px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .collection-hero {
+        min-height: 340px;
+    }
+
+
+    .collection-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .collection-header h2 {
+        font-size: 36px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .collection-hero {
+        min-height: 300px;
+
+        padding: 50px 20px;
+
+        background-attachment: scroll;
+    }
+
+
+    .collection-hero h1 {
+        font-size: 48px;
+    }
+
+
+    .collection-hero span {
+        font-size: 13px;
+    }
+
+
+    .collection-categories {
+        width: 94%;
+
+        border-radius: 15px;
+
+        padding: 15px;
+
+        gap: 5px;
+
+        margin-bottom: 50px;
+    }
+
+
+    .collection-categories a {
+        padding: 10px 16px;
+
+        font-size: 11px;
+    }
+
+
+    .collection-section {
+        width: 94%;
+    }
+
+
+    .collection-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        margin-bottom: 30px;
+    }
+
+
+    .collection-header h2 {
+        font-size: 32px;
+    }
+
+
+    #sortProducts {
+        width: 100%;
+    }
+
+
+    .collection-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+
+    .collection-product-image {
+        height: 300px;
+    }
+
+
+    .collection-product-info {
+        padding: 14px;
+    }
+
+
+    .collection-product-info h3 {
+        font-size: 16px;
+    }
+
+
+    .product-price {
+        font-size: 16px;
+    }
+
+
+    .product-heart {
+        width: 36px;
+
+        height: 36px;
+
+        font-size: 18px;
+
+        top: 10px;
+
+        right: 10px;
+    }
+
+
+    .add-cart {
+        padding: 11px 5px;
+
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .collection-hero {
+        min-height: 260px;
+    }
+
+
+    .collection-hero p {
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .collection-hero h1 {
+        font-size: 40px;
+    }
+
+
+    .collection-hero span {
+        font-size: 12px;
+    }
+
+
+    .collection-categories {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        border-radius: 12px;
+    }
+
+
+    .collection-categories a {
+        text-align: center;
+
+        padding: 11px 5px;
+    }
+
+
+    .collection-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .collection-product-image {
+        height: 420px;
+    }
+
+
+    .collection-product-info {
+        padding: 18px;
+    }
+
+
+    .collection-product-info h3 {
+        font-size: 19px;
+    }
+
+
+    .product-price {
+        font-size: 18px;
+    }
+
+
+    .add-cart {
+        padding: 14px;
+
+        font-size: 11px;
+    }
+
+
+    #loadMore {
+        width: 100%;
+    }
+
+}
+

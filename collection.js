@@ -161,7 +161,7 @@ const products = {
 
         {
             id: 104,
-            name: "Basic Tank Top",
+            name: "Lavender cute top",
             price: 599,
             category: "Tops",
             type: "tank tops",
@@ -172,7 +172,7 @@ const products = {
 
         {
             id: 105,
-            name: "Oversized T-Shirt",
+            name: "Yellow Fluffy top",
             price: 899,
             category: "Tops",
             type: "t-shirts",
@@ -183,13 +183,33 @@ const products = {
 
         {
             id: 106,
-            name: "Party Satin Top",
+            name: "Red Party Top",
             price: 1399,
             category: "Tops",
             type: "party tops",
             color: "pink",
             rating: 4.9,
             image: "images/tops/top6.jpg"
+        },
+         {
+            id: 107,
+            name: "Blue Floral Top",
+            price: 999,
+            category: "Tops",
+            type: "party tops",
+            color: "pink",
+            rating: 4.8,
+            image: "images/tops/top7.jpg"
+        },
+         {
+            id: 108,
+            name: "Oversized Full Sleeve Tee",
+            price: 599,
+            category: "Tops",
+            type: "party tops",
+            color: "pink",
+            rating: 4.9,
+            image: "images/tops/top8.jpg"
         }
 
     ],
@@ -215,7 +235,7 @@ const products = {
 
         {
             id: 202,
-            name: "Wide Leg Trousers",
+            name: "Black Mini Skirt",
             price: 1599,
             category: "Bottoms",
             type: "trousers",
@@ -226,7 +246,7 @@ const products = {
 
         {
             id: 203,
-            name: "Cargo Pants",
+            name: "Denim Shorts",
             price: 1899,
             category: "Bottoms",
             type: "cargo",
@@ -237,7 +257,7 @@ const products = {
 
         {
             id: 204,
-            name: "Pleated Skirt",
+            name: "Wide leg Trouser ",
             price: 1299,
             category: "Bottoms",
             type: "skirts",
@@ -248,18 +268,18 @@ const products = {
 
         {
             id: 205,
-            name: "Flowy Palazzo",
+            name: "Pink Mini Skirt",
             price: 1399,
             category: "Bottoms",
             type: "palazzo",
-            color: "white",
+            color: "pink",
             rating: 4.8,
             image: "images/bottoms/bottom5.jpg"
         },
 
         {
             id: 206,
-            name: "Casual Shorts",
+            name: "Wide leg Blue Jeans",
             price: 899,
             category: "Bottoms",
             type: "shorts",
@@ -357,8 +377,23 @@ const products = {
 const collectionType =
     document.body.dataset.collection || "dresses";
 
-let currentProducts =
-    products[collectionType] || products.dresses;
+let currentProducts;
+
+if (collectionType === "clothing") {
+
+    currentProducts = [
+        ...products.dresses,
+        ...products.tops,
+        ...products.bottoms,
+        ...products.accessories
+    ];
+
+} else {
+
+    currentProducts =
+        products[collectionType] || products.dresses;
+
+}
 
 
 

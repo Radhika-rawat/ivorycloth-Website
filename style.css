@@ -96,6 +96,94 @@ ul {
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
+/* ==========================
+   NAVBAR ICON SIZE
+========================== */
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.nav-icons > span {
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.nav-icons > span:hover {
+    transform: scale(1.15);
+}
+
+/* Search */
+.search-icon {
+    font-size: 31px !important;
+    font-weight: bold;
+}
+
+/* Wishlist */
+.wishlist-icon {
+    font-size: 32px !important;
+}
+
+/* Cart */
+.cart-icon {
+    font-size: 27px !important;
+    position: relative;
+}
+
+/* Cart number */
+.cart-count {
+    position: absolute;
+    top: -9px;
+    right: -10px;
+
+    width: 19px;
+    height: 19px;
+
+    background: #29311f;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+
+    .nav-icons {
+        gap: 14px;
+    }
+
+    .nav-icons > span {
+        font-size: 25px;
+    }
+
+    .search-icon {
+        font-size: 28px !important;
+    }
+
+    .wishlist-icon {
+        font-size: 29px !important;
+    }
+
+    .cart-icon {
+        font-size: 25px !important;
+    }
+
+}
 
 /* LOGO */
 
@@ -833,67 +921,99 @@ ul {
    PROMO
 ========================================================= */
 
-.promo {
+/* =====================================================
+   FULL WIDTH PROMO PHOTO
+===================================================== */
+
+.promo-photo {
     width: 90%;
-    max-width: 1450px;
-
-    margin: 120px auto;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
+    margin: 90px auto;
 
     overflow: hidden;
 
-    background: #ece4d5;
+    border-radius: 15px;
 
-    border-radius: 5px;
+    position: relative;
 }
 
-.promo-content {
-    padding: clamp(40px, 6vw, 90px);
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
+.promo-photo a {
+    display: block;
+    width: 100%;
 }
 
-.promo-content p {
-    color: var(--gold);
+.promo-photo img {
+    width: 100%;
+    height: 550px;
 
-    font-size: 11px;
+    display: block;
 
-    font-weight: 700;
+    object-fit: cover;
 
-    letter-spacing: 3px;
+    object-position: center;
+
+    transition: transform 0.7s ease;
 }
 
-.promo-content h2 {
-    font-family: Georgia, "Times New Roman", serif;
 
-    font-size: clamp(40px, 4vw, 58px);
+/* IMAGE HOVER */
 
-    line-height: 1.05;
-
-    font-weight: 400;
-
-    color: var(--green);
-
-    margin: 20px 0;
+.promo-photo:hover img {
+    transform: scale(1.03);
 }
 
-.promo-content span {
-    max-width: 450px;
 
-    color: #64645d;
+/* =====================================================
+   TABLET
+===================================================== */
 
-    font-size: 14px;
+@media (max-width: 992px) {
 
-    line-height: 1.8;
+    .promo-photo {
+        width: 92%;
+        margin: 70px auto;
+    }
 
-    margin-bottom: 28px;
+    .promo-photo img {
+        height: 450px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .promo-photo {
+        width: 94%;
+        margin: 60px auto;
+        border-radius: 10px;
+    }
+
+    .promo-photo img {
+        height: 380px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .promo-photo {
+        width: 94%;
+        margin: 45px auto;
+    }
+
+    .promo-photo img {
+        height: 300px;
+    }
+
 }
 
 .btn-primary {
@@ -922,16 +1042,6 @@ ul {
     transform: translateY(-3px);
 }
 
-.promo-image {
-    min-height: 550px;
-
-    background-image:
-        url("https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1200&q=85");
-
-    background-size: cover;
-
-    background-position: center;
-}
 
 
 /* =========================================================

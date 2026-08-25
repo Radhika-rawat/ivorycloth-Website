@@ -11,7 +11,7 @@ const products = [
         color: "Ivory",
         rating: 4.8,
         reviews: 124,
-        image: "images/Screenshot 2026-08-17 230331.png"
+        image: "images/news/new1.jpg"
     },
 
     {
@@ -24,7 +24,7 @@ const products = [
         color: "White",
         rating: 4.7,
         reviews: 89,
-        image: "images/Screenshot 2026-08-17 231040.png"
+        image: "images/news/new2.jpg"
     },
 
     {
@@ -37,7 +37,7 @@ const products = [
         color: "Beige",
         rating: 4.6,
         reviews: 76,
-        image: "images/Screenshot 2026-08-17 231212.png"
+        image: "images/news/new3.jpg"
     },
 
     {
@@ -50,7 +50,7 @@ const products = [
         color: "Brown",
         rating: 4.9,
         reviews: 154,
-        image: "images/Screenshot 2026-08-17 230549.png"
+        image: "images/news/new4.jpg"
     },
 
     {
@@ -63,7 +63,7 @@ const products = [
         color: "Black",
         rating: 4.9,
         reviews: 201,
-        image: "images/Screenshot 2026-08-17 230331.png"
+        image: "images/news/new5.jpg"
     },
 
     {
@@ -76,7 +76,7 @@ const products = [
         color: "Cream",
         rating: 4.5,
         reviews: 63,
-        image: "images/Screenshot 2026-08-17 231040.png"
+        image: "images/news/new6.jpg"
     },
 
     {
@@ -89,7 +89,7 @@ const products = [
         color: "Olive",
         rating: 4.7,
         reviews: 92,
-        image: "images/Screenshot 2026-08-17 231212.png"
+        image: "images/news/new7.jpg"
     },
 
     {
@@ -102,7 +102,7 @@ const products = [
         color: "Tan",
         rating: 4.6,
         reviews: 54,
-        image: "images/Screenshot 2026-08-17 230549.png"
+        image: "images/news/new8.jpg"
     }
 ];
 
