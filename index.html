@@ -1,254 +1,512 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivory Clothing</title>
+
+    <title>Ivory Clothing | Modern Women's Fashion</title>
+
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
-    <!-- Top Bar -->
+    <!-- ================= TOP BAR ================= -->
     <div class="top-bar">
-        <span>🚚 FREE SHIPPING ON ORDERS OVER ₹999</span>
-        <span>NEW COLLECTION — SUMMER 2026</span>
-        <span>↩ EASY 30-DAY RETURNS</span>
+        <div>🚚 FREE SHIPPING ON ORDERS OVER ₹999</div>
+        <div>NEW COLLECTION — SUMMER 2026</div>
+        <div>↩ EASY 30-DAY RETURNS</div>
     </div>
 
-    <!-- Navbar -->
+
+    <!-- ================= NAVBAR ================= -->
     <nav class="navbar">
-        <div class="logo">
+
+        <a href="index.html" class="logo">
             Ivory
             <span>clothing</span>
-        </div>
+        </a>
 
         <ul class="nav-links">
-            <li><a href="#">NEW IN</a></li>
-            <li><a href="#categories">CLOTHING</a></li>
-            <li><a href="#dresses">DRESSES</a></li>
-            <li><a href="#tops">TOPS</a></li>
-            <li><a href="#bottoms">BOTTOMS</a></li>
-            <li><a href="#accessories">ACCESSORIES</a></li>
-            <li><a href="#">SALE</a></li>
+
+            <li>
+                <a href="index.html">NEW IN</a>
+            </li>
+
+            <li>
+                <a href="clothing.html">CLOTHING</a>
+            </li>
+
+            <li>
+                <a href="dresses.html">DRESSES</a>
+            </li>
+
+            <li>
+                <a href="tops.html">TOPS</a>
+            </li>
+
+            <li>
+                <a href="bottoms.html">BOTTOMS</a>
+            </li>
+
+            <li>
+                <a href="accessories.html">ACCESSORIES</a>
+            </li>
+
+            <li>
+                <a href="sale.html" class="sale-link">SALE</a>
+            </li>
+
         </ul>
 
+
         <div class="nav-icons">
-            <span class="search-icon">⌕</span>
-            <span>♙</span>
-            <span class="wishlist-icon">♡</span>
-            <span class="cart-icon">🛍️<b class="cart-count">0</b></span>
+
+            <button class="icon-btn search-btn" aria-label="Search">
+                ⌕
+            </button>
+
+            <button class="icon-btn" aria-label="Account">
+                ♙
+            </button>
+
+            <button class="icon-btn wishlist-btn" aria-label="Wishlist">
+                ♡
+            </button>
+
+            <button class="icon-btn cart-btn" aria-label="Shopping bag">
+                🛍
+                <b class="cart-count">0</b>
+            </button>
+
         </div>
 
-        <div class="menu-btn">☰</div>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button class="menu-btn" aria-label="Open menu">
+            ☰
+        </button>
+
     </nav>
 
-    <!-- Hero -->
+
+    <!-- ================= MOBILE MENU ================= -->
+
+    <div class="mobile-menu">
+
+        <a href="index.html">NEW IN</a>
+        <a href="clothing.html">CLOTHING</a>
+        <a href="dresses.html">DRESSES</a>
+        <a href="tops.html">TOPS</a>
+        <a href="bottoms.html">BOTTOMS</a>
+        <a href="accessories.html">ACCESSORIES</a>
+        <a href="sale.html" class="sale-link">SALE</a>
+
+    </div>
+
+
+    <!-- ================= HERO ================= -->
+
     <section class="hero">
-        <div class="hero-content">
-            <p class="small-heading">NEW SEASON. NEW VIBES.</p>
 
-            <h1>
-                Effortless Style
-                <br>
-                <em>Made For You</em>
-            </h1>
+        <div class="hero-image">
 
-            <p class="hero-description">
-                Thoughtfully curated pieces for every season
-                and every moment. Discover styles that make
-                you feel confident and beautiful.
-            </p>
+            <img
+                src="images/Screenshot 2026-08-17 233355.png"
+                alt="Ivory Summer Collection"
+            >
 
-            <div class="hero-buttons">
-                <button class="btn btn-primary">SHOP NEW ARRIVALS</button>
-                <button class="btn btn-secondary">EXPLORE COLLECTIONS</button>
-            </div>
         </div>
 
-        <div class="hero-image"></div>
+        <div class="hero-overlay">
+
+            <p>THE SUMMER EDIT 2026</p>
+
+            <h1>
+                Effortless.
+                <br>
+                Elegant.
+                <br>
+                You.
+            </h1>
+
+            <a href="clothing.html" class="hero-btn">
+                SHOP COLLECTION
+            </a>
+
+        </div>
+
     </section>
 
-    <!-- Features -->
-    <div class="features">
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features">
+
         <div class="feature">
+
             <div class="feature-icon">🚚</div>
+
             <div>
                 <h4>FREE SHIPPING</h4>
                 <p>On orders over ₹999</p>
             </div>
+
         </div>
 
+
         <div class="feature">
+
             <div class="feature-icon">📦</div>
+
             <div>
                 <h4>30-DAY RETURNS</h4>
                 <p>Hassle-free returns</p>
             </div>
+
         </div>
 
+
         <div class="feature">
+
             <div class="feature-icon">🛡️</div>
+
             <div>
                 <h4>SECURE PAYMENTS</h4>
                 <p>100% secure checkout</p>
             </div>
+
         </div>
 
+
         <div class="feature">
+
             <div class="feature-icon">🏷️</div>
+
             <div>
                 <h4>EXCLUSIVE OFFERS</h4>
                 <p>For our lovely customers</p>
             </div>
-        </div>
-    </div>
 
-    <!-- Categories -->
-    <section class="section" id="categories">
-        <div class="section-header">
-            <div>
-                <p>SHOP BY CATEGORY</p>
-                <h2>Find What You Love</h2>
-            </div>
-            <a href="#" class="view-all">VIEW ALL CATEGORIES →</a>
         </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="section categories-section">
+
+        <div class="section-header">
+
+            <div>
+
+                <p>SHOP BY CATEGORY</p>
+
+                <h2>Find What You Love</h2>
+
+            </div>
+
+            <a href="clothing.html" class="view-all">
+                VIEW ALL CATEGORIES →
+            </a>
+
+        </div>
+
 
         <div class="categories">
-            <div class="category" id="dresses">
-                <img src="https://share.google/Kt4mH6xE2ihOWWkEv" alt="Dresses">
+
+
+            <a href="dresses.html" class="category">
+
+                <img
+                    src="images/Screenshot 2026-08-17 230331.png"
+                    alt="Dresses"
+                >
+
                 <div class="category-text">
+
                     <h3>Dresses</h3>
+
                     <p>120+ Styles</p>
-                </div>
-            </div>
 
-            <div class="category" id="tops">
-                <img src="https://share.google/rVVnsooKatpunhJRP" alt="Tops">
+                </div>
+
+            </a>
+
+
+            <a href="tops.html" class="category">
+
+                <img
+                    src="images/Screenshot 2026-08-17 231040.png"
+                    alt="Tops"
+                >
+
                 <div class="category-text">
+
                     <h3>Tops</h3>
+
                     <p>80+ Styles</p>
-                </div>
-            </div>
 
-            <div class="category" id="bottoms">
-                <img src="https://images.unsplash.com/photo-1506629905607-d9f2e5f2f2a0?auto=format&fit=crop&w=500&q=80" alt="Bottoms">
+                </div>
+
+            </a>
+
+
+            <a href="bottoms.html" class="category">
+
+                <img
+                    src="images/Screenshot 2026-08-17 231212.png"
+                    alt="Bottoms"
+                >
+
                 <div class="category-text">
+
                     <h3>Bottoms</h3>
+
                     <p>60+ Styles</p>
-                </div>
-            </div>
 
-            <div class="category" id="accessories">
-                <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=500&q=80" alt="Accessories">
+                </div>
+
+            </a>
+
+
+            <a href="accessories.html" class="category">
+
+                <img
+                    src="images/Screenshot 2026-08-17 230549.png"
+                    alt="Accessories"
+                >
+
                 <div class="category-text">
+
                     <h3>Accessories</h3>
-                    <p>200+ Items</p>
-                </div>
-            </div>
 
-            <div class="category">
-                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=500&q=80" alt="Sale">
-                <div class="category-text">
-                    <h3>Sale</h3>
-                    <p>Up to 60% Off</p>
+                    <p>200+ Items</p>
+
                 </div>
-            </div>
+
+            </a>
+
+
+            <a href="sale.html" class="category">
+
+                <img
+                    src="images/Screenshot 2026-08-17 231308.png"
+                    alt="Sale"
+                >
+
+                <div class="category-text">
+
+                    <h3>Sale</h3>
+
+                    <p>Up to 60% Off</p>
+
+                </div>
+
+            </a>
+
         </div>
+
     </section>
 
-    <!-- Products -->
-    <section class="section" id="products">
+
+    <!-- ================= NEW ARRIVALS ================= -->
+
+    <section class="section products-section">
+
         <div class="section-header">
+
             <div>
+
                 <p>NEW ARRIVALS</p>
+
                 <h2>Just In!</h2>
+
             </div>
-            <a href="#" class="view-all">SHOP ALL NEW ARRIVALS →</a>
+
+            <a href="clothing.html" class="view-all">
+                SHOP ALL NEW ARRIVALS →
+            </a>
+
         </div>
+
+
+        <!-- PRODUCTS GENERATED BY JAVASCRIPT -->
 
         <div class="products"></div>
-        </div>
+
     </section>
 
-    <!-- Promotional Banner -->
+
+    <!-- ================= PROMOTIONAL BANNER ================= -->
+
     <section class="promo">
+
         <div class="promo-content">
+
             <p>BE YOU. BE BEAUTIFUL.</p>
-            <h2>Confidence<br>Is Your Best Outfit</h2>
-            <span>Timeless pieces that make you feel amazing, every single day.</span>
-            <button class="btn btn-primary">SHOP NOW</button>
+
+            <h2>
+                Confidence
+                <br>
+                Is Your Best Outfit
+            </h2>
+
+            <span>
+                Timeless pieces that make you feel amazing,
+                every single day.
+            </span>
+
+            <a href="clothing.html" class="btn btn-primary">
+                SHOP NOW
+            </a>
+
         </div>
+
+
         <div class="promo-image"></div>
+
     </section>
 
-    <!-- Brands -->
-    <div class="brands">
+
+    <!-- ================= BRAND SECTION ================= -->
+
+    <section class="brands">
+
         <span>VOGUE</span>
         <span>ELLE</span>
         <span>BAZAAR</span>
         <span>InStyle</span>
         <span>marie claire</span>
         <span>GRAZIA</span>
-    </div>
 
-    <!-- Footer -->
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
+
         <div class="footer-grid">
-            <div class="footer-col">
-                <h3>Join the Velora Family</h3>
-                <p>Get early access to new arrivals, exclusive offers & style tips.</p>
-                <div class="newsletter">
-                    <input type="email" placeholder="Enter your email">
-                    <button>SUBSCRIBE</button>
-                </div>
-                <p class="socials">Instagram &nbsp; Facebook &nbsp; Pinterest &nbsp; TikTok</p>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="footer-col newsletter-col">
+
+                <h3>Join the Ivory Family</h3>
+
+                <p>
+                    Get early access to new arrivals,
+                    exclusive offers & style tips.
+                </p>
+
+
+                <form class="newsletter">
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <button type="submit">
+                        SUBSCRIBE
+                    </button>
+
+                </form>
+
+
+                <p class="socials">
+                    Instagram
+                    &nbsp;
+                    Facebook
+                    &nbsp;
+                    Pinterest
+                    &nbsp;
+                    TikTok
+                </p>
+
             </div>
 
+
+            <!-- SHOP -->
+
             <div class="footer-col">
+
                 <h4>SHOP</h4>
-                <a href="#">New In</a>
-                <a href="#">Clothing</a>
-                <a href="#">Dresses</a>
-                <a href="#">Tops</a>
-                <a href="#">Bottoms</a>
-                <a href="#">Accessories</a>
-                <a href="#">Sale</a>
+
+                <a href="index.html">New In</a>
+                <a href="clothing.html">Clothing</a>
+                <a href="dresses.html">Dresses</a>
+                <a href="tops.html">Tops</a>
+                <a href="bottoms.html">Bottoms</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="sale.html">Sale</a>
+
             </div>
 
+
+            <!-- CUSTOMER CARE -->
+
             <div class="footer-col">
+
                 <h4>CUSTOMER CARE</h4>
+
                 <a href="#">Track Your Order</a>
                 <a href="#">Shipping & Delivery</a>
                 <a href="#">Returns & Exchanges</a>
                 <a href="#">Size Guide</a>
                 <a href="#">FAQs</a>
                 <a href="#">Contact Us</a>
+
             </div>
 
+
+            <!-- ABOUT -->
+
             <div class="footer-col">
+
                 <h4>ABOUT US</h4>
+
                 <a href="#">Our Story</a>
                 <a href="#">Sustainability</a>
                 <a href="#">Lookbook</a>
                 <a href="#">Careers</a>
                 <a href="#">Blog</a>
                 <a href="#">Contact Us</a>
+
             </div>
 
+
+            <!-- PAYMENT -->
+
             <div class="footer-col">
+
                 <h4>WE ACCEPT</h4>
+
                 <p>💳 VISA</p>
                 <p>💳 Mastercard</p>
                 <p>💳 PayPal</p>
                 <p>💳 Apple Pay</p>
+
             </div>
+
         </div>
+
 
         <div class="copyright">
-            © 2026 Velora Boutique. All rights reserved.
+
+            © 2026 Ivory Clothing.
+            All rights reserved.
+
         </div>
+
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
+```
