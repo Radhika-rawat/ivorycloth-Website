@@ -1,4 +1,18 @@
+.collection-hero.dresses {
+    background-image: url("images/dresses/dress1.jpg");
+}
 
+.collection-hero.top {
+    background-image: url("images/tops/top1.jpg");
+}
+
+.collection-hero.bottoms {
+    background-image: url("images/bottoms/bottom5.jpg");
+}
+
+.collection-hero.accessories {
+    background-image: url("images/accessories/accessory2.jpg");
+}
 
 .collection-hero {
     min-height: 420px;
@@ -10,12 +24,7 @@
     color: #fff;
     overflow: hidden;
 
-    background:
-        linear-gradient(
-            rgba(38, 48, 29, 0.45),
-            rgba(38, 48, 29, 0.45)
-        ),
-        url("images/dresses/dress1.jpg");
+   
 
     background-size: cover;
     background-position: center;
@@ -63,9 +72,7 @@
 }
 
 
-/* =========================
-   CATEGORY TABS
-========================= */
+
 
 .collection-options {
     width: 100%;
@@ -126,9 +133,6 @@
 }
 
 
-/* =========================
-   MAIN COLLECTION AREA
-========================= */
 
 .collection-container {
     width: 90%;
@@ -143,9 +147,6 @@
 }
 
 
-/* =========================
-   FILTER SIDEBAR
-========================= */
 
 .filters {
     position: sticky;
@@ -215,9 +216,7 @@
 }
 
 
-/* =========================
-   PRODUCT TOP BAR
-========================= */
+
 
 .collection-top {
     display: flex;
@@ -259,9 +258,7 @@
 }
 
 
-/* =========================
-   PRODUCT GRID
-========================= */
+
 
 .collection-grid {
     display: grid;
@@ -273,9 +270,7 @@
 }
 
 
-/* =========================
-   PRODUCT CARD
-========================= */
+
 
 .collection-product {
     min-width: 0;
@@ -298,9 +293,7 @@
 }
 
 
-/* =========================
-   PRODUCT IMAGE
-========================= */
+
 
 .collection-image {
     width: 100%;
@@ -333,9 +326,7 @@
 }
 
 
-/* =========================
-   SALE BADGE
-========================= */
+
 
 .collection-sale {
     position: absolute;
@@ -359,9 +350,7 @@
 }
 
 
-/* =========================
-   WISHLIST BUTTON
-========================= */
+
 
 .collection-heart {
     position: absolute;
@@ -448,9 +437,7 @@
 }
 
 
-/* =========================
-   PRODUCT INFORMATION
-========================= */
+
 
 .collection-info {
     padding: 17px 3px 24px;
@@ -487,9 +474,7 @@
 }
 
 
-/* =========================
-   RATING
-========================= */
+
 
 .collection-rating {
     color: #bd952e;
@@ -510,9 +495,7 @@
 }
 
 
-/* =========================
-   PRICE
-========================= */
+
 
 .collection-price {
     display: flex;
@@ -539,9 +522,7 @@
 }
 
 
-/* =========================
-   ADD TO BAG
-========================= */
+
 
 .collection-add {
     width: 100%;
@@ -574,9 +555,7 @@
 }
 
 
-/* =========================
-   LOAD MORE
-========================= */
+
 
 .load-more {
     display: block;
@@ -614,9 +593,6 @@
 }
 
 
-/* =========================
-   QUICK VIEW MODAL
-========================= */
 
 .collection-modal {
     position: fixed;
